@@ -20,19 +20,6 @@ namespace MatchingGame
             Dock = DockStyle.Fill;
             AutoSize = false;
             Font = new Font("Segoe UI Light", 32f, FontStyle.Regular);
-
-            Click += MatchingClick;
-        }
-
-        private void MatchingClick(object sender, EventArgs e)
-        {
-            MatchingLabel clicked = sender as MatchingLabel;
-            if (clicked != null)
-            {
-                if (clicked.ForeColor != Color.Black) {
-                    clicked.ForeColor = Color.Black;
-                }
-            }
         }
 
         protected override void OnPaint(PaintEventArgs pe)
